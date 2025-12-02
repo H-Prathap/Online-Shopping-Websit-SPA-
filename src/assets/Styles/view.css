@@ -1,0 +1,150 @@
+.viewcard {
+  width: 100%;
+  min-height: 100vh;
+  padding: 5vh 0;
+  background: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.viewcard .card {
+  width: 90%;
+  max-width: 1100px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  gap: 40px;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+.viewcard .left {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left .title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  color: #222;
+  text-align: center;
+}
+
+.left img {
+  width: 100%;
+  height: 330px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.left .but button {
+  padding: 12px 25px;
+  background: #2c7a00;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.left .but button:hover {
+  background: #1f5a00;
+}
+
+.viewcard .right {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.right .price {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ff3b3b;
+}
+
+.right span {
+  font-size: 18px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.btns {
+  margin-top: auto;
+}
+
+.btns button {
+  background: #0077ff;
+  color: #fff;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btns button:hover {
+  background: #005fcc;
+}
+
+@media (max-width: 1024px) {
+  .viewcard .card {
+    padding: 25px;
+    gap: 25px;
+  }
+
+  .left img {
+    height: 280px;
+  }
+
+  .right span {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .viewcard .card {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .viewcard .left, 
+  .viewcard .right {
+    width: 100%;
+  }
+
+  .left img {
+    height: 260px;
+  }
+
+  .btns button {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .left .title {
+    font-size: 22px;
+  }
+
+  .left img {
+    height: 220px;
+  }
+
+  .right .price {
+    font-size: 24px;
+  }
+}
